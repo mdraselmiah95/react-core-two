@@ -15,11 +15,14 @@ function ExternalUser() {
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => setUsers(data));
   }, []);
   return (
     <div>
-      <h3>External User: </h3>
+      <h3>External User</h3>
+      {users.map((user) => (
+        <li>{user.name}</li>
+      ))}
     </div>
   );
 }
