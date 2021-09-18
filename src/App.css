@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+.product {
+  background-color: antiquewhite;
+  border: 2px solid gray;
+  border-radius: 7px;
+}
