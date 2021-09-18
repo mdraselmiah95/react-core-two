@@ -11,16 +11,21 @@ function App() {
 
 function Counter() {
   const [count, setCount] = useState(12);
-  const handleCount = () => {
+  const handleIncrease = () => {
     // const newCount = count + 1;
     setCount(count + 1);
+  };
+  const handleDecrease = () => {
+    // const newCount = count + 1;
+    setCount(count - 1);
   };
 
   // console.log(count, setCount);
   return (
     <div>
       <h1>Count: {count}</h1>
-      <button onClick={handleCount}>INCREASE</button>
+      <button onClick={handleIncrease}>INCREASE</button>
+      <button onClick={handleDecrease}>DECREASE</button>
     </div>
   );
 }
