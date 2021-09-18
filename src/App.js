@@ -1,10 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Counter></Counter>
+      {/* <Counter></Counter> */}
+      <ExternalUser></ExternalUser>
+    </div>
+  );
+}
+
+function ExternalUser() {
+  const [users, setUsers] = useState([]);
+  useEffect(() => {
+    console.log("inside use Effect");
+  }, []);
+  return (
+    <div>
+      <h3>External User: </h3>
     </div>
   );
 }
