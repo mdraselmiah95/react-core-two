@@ -13,7 +13,9 @@ function App() {
 function ExternalUser() {
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    console.log("inside use Effect");
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then((res) => res.json())
+      .then((data) => console.log(data));
   }, []);
   return (
     <div>
