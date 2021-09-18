@@ -11,7 +11,11 @@ function App() {
 
 function Counter() {
   const [count, setCount] = useState(28);
-  const handelIncrease = () => console.log("Clicked");
+  const handelIncrease = () => {
+    const newCount = count + 1;
+    setCount(newCount);
+  };
+
   // console.log(count, setCount);
   return (
     <div>
