@@ -21,8 +21,18 @@ function ExternalUser() {
     <div>
       <h3>External User</h3>
       {users.map((user) => (
-        <li>{user.name}</li>
+        <User name={user.name} phone={user.phone} email={user.email}></User>
       ))}
+    </div>
+  );
+}
+
+function User(props) {
+  return (
+    <div className="product">
+      <h2>Name: {props.name}</h2>
+      <h3>Phone: {props.phone}</h3>
+      <p>Email: {props.email}</p>
     </div>
   );
 }
