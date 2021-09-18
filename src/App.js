@@ -10,7 +10,7 @@ function App() {
 }
 
 function Counter() {
-  const [count, setCount] = useState(12);
+  const [count, setCount] = useState(0);
   const handleIncrease = () => {
     setCount(count + 1);
   };
