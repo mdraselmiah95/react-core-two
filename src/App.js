@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 
 function App() {
@@ -9,9 +10,11 @@ function App() {
 }
 
 function Counter() {
+  const [count, setCount] = useState(28);
+  // console.log(count, setCount);
   return (
     <div>
-      <h1>Count:</h1>
+      <h1>Count: {count}</h1>
       <button>INCREASE</button>
     </div>
   );
