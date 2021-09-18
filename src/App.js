@@ -1,7 +1,20 @@
 import "./App.css";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Counter></Counter>
+    </div>
+  );
+}
+
+function Counter() {
+  return (
+    <div>
+      <h1>Count:</h1>
+      <button>INCREASE</button>
+    </div>
+  );
 }
 
 function Product(props) {
